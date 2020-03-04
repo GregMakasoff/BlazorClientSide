@@ -1,0 +1,52 @@
+@page "/edit/{id}"
+@inject HttpClient httpClient
+
+<h1>Edit A Speaker</h1>
+
+@if (student == null) {
+<p><em>Loading...</em></p>
+} else {
+<EditForm Model="@student" OnValidSubmit="@HandleUpdate">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+  <InputText placeholder="First Name" id="firstName" @bind-Value="@student.FirstName" />
+  <br />
+  <InputText placeholder="Last Name" id="lastName" @bind-Value="@student.LastName" />
+  <br />
+  <InputText placeholder="Email" id="email" @bind-Value="@student.Email" />
+  <br />
+  <InputText placeholder="Mobile Number" id="mobileNum" @bind-Value="@student.MobileNumber" />
+  <br />
+  <InputText placeholder="Area of Specialization" id="areaOfSpec" @bind-Value="@student.AreaOfSpec" />
+  <br />
+  <InputText placeholder="City" id="city" @bind-Value="@student.City" />
+  <br />
+  <InputText placeholder="Province" id="province" @bind-Value="@student.Province" />
+  <br />
+  <InputText placeholder="Employer" id="employer" @bind-Value="@student.Employer" />
+  <button type="submit" value="Delete" class="btn btn-danger">Submit</button>
+</EditForm>
+
+
+@code {
+  [Parameter]
+  public string id { get; set; }
+  string baseUrl = "https://localhost:6001/";
+  Speaker student;
+  protected override async Task OnInitializedAsync() {
+    await load();
+  }
+  protected async Task load() {
+    student = await httpClient.GetJsonAsync<Speaker>($"{baseUrl}api/speaker/{id}");
+  }
+  private async void HandleUpdate() {
+    string endpoint = $"{baseUrl}api/speaker/{student.SpeakerId}";
+
+    await httpClient.SendJsonAsync(HttpMethod.Put, endpoint, student);
+
+    @inject NavigationManager NavigationManager; 
+    NavigationManager.NavigateTo("/speakers", false);
+  }
+}
+
+}

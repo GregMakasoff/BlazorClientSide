@@ -33,7 +33,7 @@
       <th>@item.City</th>
       <th>@item.Province</th>
       <th>@item.Employer</th>
-      <td><a class="btn btn-success btn-sm" @onclick="@(() => ShowEdit(item.SpeakerId))">edit</a></td>
+      <td><a class="btn btn-success btn-sm" href="/edit/@item.SpeakerId">edit</a></td>
       <td><a class="btn btn-danger btn-sm" href="/delete/@item.SpeakerId">del</a></td> 
     </tr>
     }
