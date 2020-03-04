@@ -1,0 +1,44 @@
+@page "/add"
+@inject HttpClient httpClient
+
+<h1>Add A Speaker</h1>
+
+@if (student == null) {
+<p><em>Loading...</em></p>
+} else {
+<EditForm Model="@student" OnValidSubmit="@HandleAdd">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+  <InputText placeholder="First Name" id="firstName" @bind-Value="@student.FirstName" />
+  <br />
+  <InputText placeholder="Last Name" id="lastName" @bind-Value="@student.LastName" />
+  <br />
+  <InputText placeholder="Email" id="email" @bind-Value="@student.Email" />
+  <br />
+  <InputText placeholder="Mobile Number" id="mobileNum" @bind-Value="@student.MobileNumber" />
+  <br />
+  <InputText placeholder="Area of Specialization" id="areaOfSpec" @bind-Value="@student.AreaOfSpec" />
+  <br />
+  <InputText placeholder="City" id="city" @bind-Value="@student.City" />
+  <br />
+  <InputText placeholder="Province" id="province" @bind-Value="@student.Province" />
+  <br />
+  <InputText placeholder="Employer" id="employer" @bind-Value="@student.Employer" />
+  <button type="submit" value="Delete" class="btn btn-danger">Submit</button>
+</EditForm>
+
+
+@code {
+  private Speaker student = new Speaker();  
+  private async void HandleAdd() {
+    string baseUrl = "https://localhost:6001/";
+    string endpoint = $"{baseUrl}api/speaker";
+    student.SpeakerId = Guid.NewGuid().ToString();
+    await httpClient.SendJsonAsync(HttpMethod.Post, endpoint, student);
+
+    @inject NavigationManager NavigationManager; 
+    NavigationManager.NavigateTo("/", false);
+  }
+}
+
+}

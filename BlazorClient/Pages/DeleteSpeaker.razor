@@ -1,0 +1,25 @@
+@page "/delete/{id}"
+@inject HttpClient httpClient
+
+<h1>Delete A Speaker</h1>
+
+@if (id == null) {
+<p><em>Loading...</em></p>
+} else {
+<button type="submit" value="Delete" @onclick="@(e => HandleDelete())" style="display: inline-block;" class="btn btn-danger">Submit</button>
+<a href="https://localhost:5001/speakers"><button value="Back" class="btn btn-success">Back</button></a>
+
+ @code {
+    [Parameter]
+    public string id { get; set; }
+    protected async void HandleDelete() {
+      string baseUrl = "https://localhost:6001/";
+      string endpoint = $"{baseUrl}api/speaker/{id}";
+      await httpClient.SendJsonAsync(HttpMethod.Delete, endpoint, null);
+            
+        @inject NavigationManager NavigationManager; 
+        NavigationManager.NavigateTo("/speakers", false);
+    }
+  }
+
+}
