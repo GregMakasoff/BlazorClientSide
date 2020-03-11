@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {}
+    "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {
+    "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj",
         "projectName": "SchoolLibrary",
-        "projectPath": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj",
-        "packagesPath": "C:\\Users\\gregm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\obj\\",
+        "projectPath": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj",
+        "packagesPath": "C:\\Users\\catre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gregm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+          "C:\\Users\\catre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

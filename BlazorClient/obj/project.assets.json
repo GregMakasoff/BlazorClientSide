@@ -1186,27 +1186,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gregm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\catre\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\BlazorClient\\BlazorClient.csproj",
+      "projectUniqueName": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\BlazorClient\\BlazorClient.csproj",
       "projectName": "BlazorClient",
-      "projectPath": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\BlazorClient\\BlazorClient.csproj",
-      "packagesPath": "C:\\Users\\gregm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\BlazorClient\\obj\\",
+      "projectPath": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\BlazorClient\\BlazorClient.csproj",
+      "packagesPath": "C:\\Users\\catre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\BlazorClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gregm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\catre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -1218,8 +1215,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {
-              "projectPath": "C:\\Users\\gregm\\OneDrive\\Documents\\CST\\Level 4\\COMP 4870 - Full-Stack Development\\Assignment\\A2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj"
+            "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj": {
+              "projectPath": "C:\\Users\\catre\\Documents\\comp4870_FullStack\\Assign2\\BlazorClientSide\\SchoolLibrary\\SchoolLibrary.csproj"
             }
           }
         }
